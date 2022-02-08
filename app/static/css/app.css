@@ -1,3 +1,81 @@
+#css
+*{
+    box-sizing: border-box;
+}
 body {
     padding-top: 5rem;
+}
+
+div.myprofile {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 40%;
+    border: .05em solid #000;
+    border-radius: 1em;
+    padding: 0 0 1em 0;
+}
+
+section:nth-child(1) {
+    background:rgb(206, 181, 41);
+    display: flex;
+    flex-flow: column wrap;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    padding:2em 0 .05em 0;
+    border-top-right-radius: .8em;
+    border-top-left-radius: .8em;
+
+}
+section:nth-child(2){
+    background: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em 1em 2em;
+    text-align: center;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+img#profilepic{
+    width: 12rem;
+    border-radius: 50%;
+    display: flex;
+    
+}
+section h2.title{
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 1em 0 .7em 0;
+}
+
+p,span{
+    color: #B4B4B4;
+}
+
+section h6{
+    margin: 0 0 .5em 0;
+    color: #fff;
+}
+
+section.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+div.item{
+    display: flex;
+    flex-flow: column wrap;
+}
+section:nth-child(2) button{
+    background: #297BA6;
+    color: #fff;
+    border: none;
+    width: 8em;
+    padding: .4em 0 .4em 0;
+    margin: 2em 0 0 0;
+    border-radius: .5em;
 }

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block css %}<link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}"/> {% endblock%}
+
+{% block main %}
+    <div class="myprofile">
+        <section class="pagelayout">
+            <div id="image"><img id="profilepic" src="{{url_for('static', filename='img/me.png')}}"/></div>
+            <h2 class="title">Tia-Jay Davis</h2>
+            <h6>@tdavis</h6>
+            <h6>Kingston, Jamaica</h6>
+            <h6>{{datestring}}</h6>
+        </section>
+        <section class="pagelayout">
+            <p>Animal lover and philanthropist. My favourite quote is "Everything, in time".</p>
+            <section class="container">
+                <div class="item">
+                    <h5>7</h5>
+                    <span>Posts</span>
+                </div>
+                <div class="item">
+                    <h5>100</h5>
+                    <span>Following</span>
+                </div>
+                <div class="item">
+                    <h5>250</h5>
+                    <span>Followers</span>
+                </div>
+            </section>
+            <button>Follow</button>
+        </section>
+    </div>
+{% endblock %}
